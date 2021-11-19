@@ -74,7 +74,7 @@ document.querySelector("#skip").addEventListener("click", function(){
 document.getElementById("volume").innerHTML = document.getElementById("slider").value;
 document.getElementById("slider").oninput = function () {
 	document.getElementById("volume").innerHTML = this.value + "%"
-	Audio.volume = this.value;
+	vid.volume = (this.value/100);
 };
 
 document.querySelector("#vintage").addEventListener("click", function(){
